@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">FinalProject</string>
+    <string name="app_name">Gym Hero</string>
+    <string name="track_now">Track Now</string>
+    <string name="yesterday_tab">Yesterday</string>
+    <string name="today_tab">Today</string>
+    <string name="tomorrow_tab">Tomorrow</string>
+
 </resources>

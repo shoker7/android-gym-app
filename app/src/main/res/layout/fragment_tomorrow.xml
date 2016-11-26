@@ -7,9 +7,44 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Yesterday"
-        android:textSize="40dp"
+        android:text="Tomorrow's workout:"
+        android:textSize="36sp"
         android:textStyle="bold"
-        android:layout_centerInParent="true"/>
+        android:textAlignment="viewStart"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/tvToday"
+        />
+
+    <Button
+        android:text="Track Now"
+        android:textSize="20sp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/textColorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_below="@+id/tvToday"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </RelativeLayout>
