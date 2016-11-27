@@ -20,4 +20,9 @@ public class LoginActivity extends AppCompatActivity {
         profileIntent.putExtra("username", curUser);
         startActivity(profileIntent);
     }
+
+    public void startRegisterActivity(View view) {
+        Intent registerIntent = new Intent(this, RegisterActivity.class);
+        startActivityForResult(registerIntent, 1);
+    }
 }

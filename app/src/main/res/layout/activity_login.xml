@@ -4,29 +4,92 @@
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.sam.finalproject.LoginActivity">
+    tools:context="com.example.sam.finalproject.LoginActivity"
+    android:background="@drawable/gym"
+    >
 
+    <!-- Gradient -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        />
+    <!-- End Gradient -->
 
+    <!-- App Name TV-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/app_name"
+        android:textSize="54sp"
+        android:textAlignment="center"
+        android:layout_above="@+id/username"
+        android:layout_centerVertical="true"
+        android:textColor="@color/textColorPrimary"/>
+
+    <!-- Username text field -->
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Username"
+        android:textColorHint="@color/textColorPrimary"
+        android:textColor="@color/textColorPrimary"
         android:inputType="text"
-        android:layout_marginBottom="65dp"
+        android:textSize="20sp"
         android:id="@+id/username"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/password"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        />
+
+    <!-- Password text field -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:textColorHint="@color/textColorPrimary"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:id="@+id/password"
+        android:layout_above="@+id/btnLogin"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:textColor="@color/textColorPrimary"
+        />
+
+
+    <!-- Login Button -->
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Login"
         android:onClick="login"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="160dp"
-        android:layout_below="@id/username"
+        android:id="@+id/btnLogin"
+        android:layout_above="@+id/btnRegister"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorAccent"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        />
+
+    <!-- Register Button -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Register"
+        android:onClick="startRegisterActivity"
+        android:id="@+id/btnRegister"
+        android:layout_alignParentBottom="true"
+        android:background="#1fffffff"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="10dp"
         />
 </RelativeLayout>

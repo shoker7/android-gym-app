@@ -28,6 +28,7 @@
         android:layout_below="@+id/tvToday"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
+        android:onClick="startWorkoutActivity"
         />
 
     <ScrollView
