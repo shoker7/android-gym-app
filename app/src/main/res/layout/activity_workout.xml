@@ -31,17 +31,17 @@
             android:layout_margin="10dp"
             >
             <!--Workout Category-->
-            <TextView
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:layout_below="@+id/tvToday"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="10dp"
-                android:text="CHEST"
-                android:id="@+id/workout_category"/>
+            <!--<TextView-->
+                <!--android:textSize="24sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAlignment="center"-->
+                <!--android:layout_below="@+id/tvToday"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:text="CHEST"-->
+                <!--android:id="@+id/workout_category"/>-->
             <!--End Workout Category -->
 
             <!-- Exercise List -->

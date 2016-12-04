@@ -21,13 +21,12 @@ public class TodayFragment extends Fragment{
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_today,container, false);
     }
 
     public void startWorkoutActivity(View view) {
-//        Intent workoutIntent = new Intent(this, WorkoutActivity.class);
-//        startActivity(workoutIntent);
+        Intent intent = new Intent(getActivity(), WorkoutActivity.class);
+        startActivity(intent);
     }
 }

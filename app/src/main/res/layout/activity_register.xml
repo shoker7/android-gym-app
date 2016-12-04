@@ -104,7 +104,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Cancel"
-        android:onClick="registerAccount"
+        android:onClick="cancel"
         android:id="@+id/btnCancel"
         android:textColor="@color/textColorPrimary"
         android:layout_alignParentBottom="true"

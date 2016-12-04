@@ -17,23 +17,31 @@ public class RegisterActivity extends AppCompatActivity {
 
     public void registerAccount(View view) {
         // validate the form
+        EditText fullnameField = (EditText)findViewById(R.id.userFullName);
+        EditText userEmailField = (EditText)findViewById(R.id.userEmail);
         EditText usernameField = (EditText)findViewById(R.id.username);
         EditText passwordField = (EditText)findViewById(R.id.password);
+        EditText confirmPasswordField = (EditText)findViewById(R.id.passwordConfirm);
+
+        String fullName = fullnameField.getText().toString();
+        String userEmail = userEmailField.getText().toString();
         String username = usernameField.getText().toString();
         String password = passwordField.getText().toString();
-        // Register a user, and if successful
+        String confirmPassword = confirmPasswordField.getText().toString();
         try {
-            // TODO check if user exists
-            // if so login
-            // else create new user
-
-            setResult(Activity.RESULT_OK, getIntent());
-            this.finish();
+            if(!confirmPassword.equals(password)) {
+                Toast.makeText(this, "Passwords do not match.", Toast.LENGTH_LONG).show();
+            }
+            else {
+                UserHelper.CreateUser(fullName, userEmail, username, password);
+                setResult(Activity.RESULT_OK, getIntent());
+                this.finish();
+            }
         } catch (Exception e) {
             Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
         }
     }
-    public void cancelBtn(View view) {
+    public void cancel(View view) {
         setResult(Activity.RESULT_CANCELED, getIntent());
     }
 }
